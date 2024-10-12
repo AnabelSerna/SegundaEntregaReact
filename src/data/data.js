@@ -2,63 +2,61 @@ const products = [
     {
       id: "Grt223",
       name: "Iphone 13",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aut repellat cupiditate praesentium incidunt ipsum nostrum. Vitae tenetur libero iure! Culpa sapiente assumenda veniam aperiam fugiat excepturi! Facere, sequi illum.",
+      description: "Iphone 13 de 256GB",
       price: 400,
       stock: 10,
       image: "/img/iphone13.png",
-      category: "remeras"
+      category: "Iphone"
     },
     {
       id: "Grt224",
       name: "Iphone 14",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aut repellat cupiditate praesentium incidunt ipsum nostrum. Vitae tenetur libero iure! Culpa sapiente assumenda veniam aperiam fugiat excepturi! Facere, sequi illum.",
+      description: "Iphone 14 256GB",
       price: 420,
       stock: 4,
       image: "/img/iphone14.png",
-      category: "remeras"
+      category: "Iphone"
     },
     {
       id: "Hff556",
       name: "Iphone 15",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aut repellat cupiditate praesentium incidunt ipsum nostrum. Vitae tenetur libero iure! Culpa sapiente assumenda veniam aperiam fugiat excepturi! Facere, sequi illum.",
+      description: "Iphone 15 512GB",
       price: 720,
       stock: 5,
       image: "/img/iphone15.png",
-      category: "pantalones"
+      category: "Iphone"
     },
     {
       id: "Hff557",
       name: "Iphone 15 pro",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aut repellat cupiditate praesentium incidunt ipsum nostrum. Vitae tenetur libero iure! Culpa sapiente assumenda veniam aperiam fugiat excepturi! Facere, sequi illum.",
+      description: "Iphone 15 pro 1TB",
       price: 620,
       stock: 17,
       image: "/img/iphone15pro.png",
-      category: "pantalones"
+      category: "Iphone"
     },
     {
       id: "Wre442",
       name: "Watch Hermes",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aut repellat cupiditate praesentium incidunt ipsum nostrum. Vitae tenetur libero iure! Culpa sapiente assumenda veniam aperiam fugiat excepturi! Facere, sequi illum.",
+      description: "Watch Hermes 32GB",
       price: 800,
       stock: 2,
       image: "/img/watchhermes.png",
-      category: "zapatillas"
+      category: "Apple Watch"
     },
     {
       id: "Wre443",
       name: "Watch S9",
-      description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non aut repellat cupiditate praesentium incidunt ipsum nostrum. Vitae tenetur libero iure! Culpa sapiente assumenda veniam aperiam fugiat excepturi! Facere, sequi illum.",
+      description: "Watch S9 64GB",
       price: 820,
       stock: 6,
       image: "/img/watchs9.jpeg",
-      category: "zapatillas"
+      category: "Apple Watch"
     },
   ]
 
-  //Obtener productos
   const getProducts = () => {
     return new Promise((resolve, reject) => {
-      //Simulamos un retraso de red
       setTimeout(() => {
         resolve(products)
       }, 2000)

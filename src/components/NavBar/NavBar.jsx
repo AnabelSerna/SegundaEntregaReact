@@ -1,37 +1,33 @@
-import CartWidget from './CartWidget'
-import logo from '../../assets/logo.jpeg'
-import "./navbar.scss"
+import CartWidget from "./CartWidget"
+import { BsBox } from "react-icons/bs";
+import { Link } from "react-router-dom"
+
+import "./navbar.css"
+
 const NavBar = () => {
+
   return (
-      <nav className="navbar navbar-expand-lg">
-        <div className='brand'>
-          <img src={logo} alt="" width={35} />
-        </div>
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">AnaStore</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Iphone</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">Mac</a>
-              </li>
-              <li className="nav-item">
-                <CartWidget />
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>  
+    <nav className="navbar">
+
+      <ul className="categories">
+        <li className="category">
+          <Link to="/category/remeras" className="text-link">Remeras</Link>
+        </li>
+        <li className="category">
+          <Link to="/category/pantalones" className="text-link" >Pantalones</Link>
+        </li>
+        <li className="category">
+          <Link to="/category/zapatillas" className="text-link">Zapatillas</Link>
+        </li>
+      </ul>
+
+      <Link to="/" className="brand primary-font-color">
+        <BsBox className="icon-brand" />
+        <p className="title-brand ">Box Ecommerce</p>
+      </Link>
+
+      <CartWidget />
+    </nav>
   )
 }
-
-
 export default NavBar

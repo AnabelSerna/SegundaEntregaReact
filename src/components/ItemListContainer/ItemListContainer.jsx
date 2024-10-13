@@ -11,12 +11,10 @@ const ItemListContainer = ({ greeting }) => {
   useEffect(() => {
     getProducts()
       .then((data) => {
-        if(idCategory){
-          //filtrar la data por esa categoria
-          const filterProducts = data.filter( (product)=> product.category === idCategory )
+        if (idCategory) {
+          const filterProducts = data.filter((product) => product.category === idCategory)
           setProducts(filterProducts)
-        }else{
-          //guardar toda la lista
+        } else {
           setProducts(data)
         }
       })

@@ -7,10 +7,10 @@ const ItemDetailContainer = () => {
   const [product, setProduct] = useState({})
   const { idProduct } = useParams()
 
-  useEffect( ()=> {
+  useEffect(() => {
     getProduct(idProduct)
-      .then((data)=> setProduct(data) )
-  }, [idProduct] )
+      .then((data) => setProduct(data))
+  }, [idProduct])
 
   return (
     <ItemDetail product={product} />

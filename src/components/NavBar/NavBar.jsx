@@ -11,19 +11,19 @@ const NavBar = () => {
 
       <ul className="categories">
         <li className="category">
-          <Link to="/category/remeras" className="text-link">Remeras</Link>
+          <Link to="/category/Iphone" className="text-link">Iphone</Link>
         </li>
         <li className="category">
-          <Link to="/category/pantalones" className="text-link" >Pantalones</Link>
+          <Link to="/category/Watch" className="text-link" >Watch</Link>
         </li>
         <li className="category">
-          <Link to="/category/zapatillas" className="text-link">Zapatillas</Link>
+          <Link to="/category/macbook" className="text-link">Macbook</Link>
         </li>
       </ul>
 
       <Link to="/" className="brand primary-font-color">
         <BsBox className="icon-brand" />
-        <p className="title-brand ">Box Ecommerce</p>
+        <p className="title-brand ">Inicio</p>
       </Link>
 
       <CartWidget />

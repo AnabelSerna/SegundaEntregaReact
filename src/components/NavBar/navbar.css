@@ -31,6 +31,9 @@
   align-items: center;
 }
 
+.brand .icon-brand{
+  font-size: 40px;
+}
 
 .brand .title-brand {
   padding: 0 10px;

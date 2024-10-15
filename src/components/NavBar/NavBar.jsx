@@ -22,6 +22,7 @@ const NavBar = () => {
       </ul>
 
       <Link to="/" className="brand primary-font-color">
+        <BsBox className="icon-brand" />
         <p className="title-brand ">Inicio</p>
       </Link>
 

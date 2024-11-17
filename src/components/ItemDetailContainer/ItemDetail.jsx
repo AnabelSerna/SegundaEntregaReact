@@ -1,4 +1,4 @@
-import 'ItemDetail2.css';
+import './ItemDetail2.css';
 import { Link } from "react-router-dom";
 import ItemCount from "../ItemCount/ItemCount";
 

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import ItemCount from "../ItemCount/ItemCount"
-import "./itemdetail.css"
+import "./itemDetail.css"
 
 const ItemDetail = ({ product, addProduct, hideItemCount }) => {
   return (

@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom"
-import ItemCount from "../ItemCount/ItemCount"
-import "./itemDetail.css"
+import 'ItemDetail2.css';
+import { Link } from "react-router-dom";
+import ItemCount from "../ItemCount/ItemCount";
 
 const ItemDetail = ({ product, addProduct, hideItemCount }) => {
   return (
